@@ -1,28 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
 
-body{
+body {
     background-color: hsl(212, 45%, 89%);
 }
 
-.center{
+.qr-section {
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.qr-section{
-    height: 100vh;
-    width: 100%;
-}
-
-.container{
+.container {
     height: 28rem;
     width: 18rem;
     display: flex;
@@ -32,23 +29,23 @@ body{
     border-radius: 1rem;
 }
 
-.container > *{
+.container>* {
     margin: 1rem;
     text-align: center;
 }
 
-.qr{
+.qr {
     width: 16rem;
     border-radius: 1rem;
 }
 
-h1{
+h1 {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 0rem !important;
 }
 
-p{
+p {
     font-size: 15px;
     color: hsl(220, 15%, 55%);
 }
