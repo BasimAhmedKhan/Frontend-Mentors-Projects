@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <section class="center">
+        <div class="container">
+            <form method="post" class="dateForm">
+                <div class="dateColumn">
+                    <label class="errorClass" for="DAY">DAY</label>
+                    <input class="errorClass" type="number" name="DAY"
+                    id="DAY" required placeholder="DD">
+                    <i class="errorMsg error">Must be a valid day</i>
+                </div>
+                <div class="dateColumn">
+                    <label class="errorClass" for="MONTH">MONTH</label>
+                    <input class="errorClass" type="number" name="MONTH" id="MONTH" required placeholder="MM">
+                    <i class="errorMsg error">Must be a valid month</i>
+                </div>
+                <div class="dateColumn">
+                    <label class="errorClass" for="YEAR">YEAR</label>
+                    <input class="errorClass" type="number" name="YEAR" id="YEAR" required placeholder="YYYY">
+                    <i class="errorMsg error">Must be a valid year</i>
+                </div>
+                <div onclick="calculate();" class="btn center"><img src="./assets/images/icon-arrow.svg" alt=""></div>
+            </form>
+            <div class="date">
+                <div class="dateText"><span id="yearText">- -</span>years</div>
+                <div class="dateText"><span id="monthText">- -</span>months</div>
+                <div class="dateText"><span id="dayText">- -</span>days</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

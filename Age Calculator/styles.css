@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+:root {
+    --OffWhite: hsl(0, 0%, 94%); --LightGrey: hsl(0, 0%, 86%); --SmokeyGrey: hsl(0, 1%, 44%);
+    --purple: hsl(259, 100%, 65%);
+    --red: hsl(0, 100%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--OffWhite);
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    height: 30rem;
+    width: 50rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 12rem;
+}
+
+.container>* {
+    margin: 0 3rem;
+}
+
+.dateForm {
+    display: flex;
+    position: relative;
+    height: 10rem;
+    border-bottom: 2px solid var(--LightGrey);
+}
+
+.dateColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+label {
+    color: var(--SmokeyGrey);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+input {
+    font-weight: 800;
+    height: 4rem;
+    width: 8rem;
+    border: 2px solid var(--LightGrey);
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.btn{
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    right: 0;
+    bottom: -2.5rem;
+    background-color: var(--purple);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn img{
+    width: 3rem;
+}
+
+.date{
+    margin-top: 1rem;
+}
+
+.dateText{
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.date span{
+    color: var(--purple);
+}
+
+.errorMsg{
+    display: none;
+}
+
+.error{
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.display{
+    display: block !important;
+}
