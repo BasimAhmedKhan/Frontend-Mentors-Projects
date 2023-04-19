@@ -13,11 +13,11 @@ Live Demo ==> [QR code component](https://basimahmedkhan.github.io/Frontend-Ment
 
 Desktop Preview
 
-[Desktop](./design/desktop-preview.jpg)
+![Desktop](./design/desktop-preview.jpg)
 
 Mobile Preview
 
-[Mobile](./design/mobile-design.jpg)
+![Mobile](./design/mobile-design.jpg)
 
 
 ## Features
