@@ -20,12 +20,15 @@ Live Demo ==> [Age Calculator](https://basimahmedkhan.github.io/Frontend-Mentors
 ## Screenshots
 
 Desktop Preview
+
 ![Desktop](./design/desktop-preview.jpg)
 
-Desktop Error Preview
+Desktop Error Preview.
+
 ![DesktopE](./design/desktop-error-empty.jpg)
 
 Mobile Preview
+
 ![Mobile](./design/mobile-design.jpg)
 
 
