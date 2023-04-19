@@ -133,7 +133,7 @@ input {
     }
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 300px) and (max-width: 400px) {
     :root {
         font-size: 10px;
     }
@@ -151,7 +151,7 @@ input {
     }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
     :root {
         font-size: 12px;
     }
@@ -169,9 +169,8 @@ input {
     }
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
     :root {
         font-size: 14px;
     }
-
 }
