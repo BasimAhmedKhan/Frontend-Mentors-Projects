@@ -9,7 +9,6 @@ calculate = () => {
 
     var date = new Date();
     let dob = month.value + " " + day.value + ", " + year.value;
-    console.log(dob);
     var birthDate = new Date(dob);
     
     if (+day.value, +month.value, +year.value == "" || +day.value > 31 || +month.value > 12 || +year.value > date.getFullYear()) {
@@ -28,7 +27,7 @@ calculate = () => {
         let noOfMonths = Math.floor(time);
         time = time / 12;
         let noOfYears = Math.floor(time);
-        dayText.innerText = noOfDays - Math.ceil(noOfMonths*30.417);
+        dayText.innerText = noOfDays - Math.floor((noOfMonths*30.417)-(noOfYears/4));
         monthText.innerText = noOfMonths - (noOfYears*12);
         yearText.innerText = noOfYears;
     }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Card Detail Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cardBody">
+            <div class="front card">
+                <div class="cardContainer">
+                    <img class="logo" src="./images/card-logo.svg" alt="">
+                    <div class="accNo" id="accNo">0000 0000 0000 0000</div>
+                    <div class="nameDate">
+                        <span id="cardHolderName">JOHN DOE</span>
+                        <span id="cardDate">00/00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="back card">
+                <div class="cvcNo" id="cvc">000</div>
+            </div>
+        </div>
+        <div class="formBody center">
+            <form id="formBody" class="any">
+                <label for="name">CARDHOLDER NAME</label>
+                <div></div>
+                <input type="text" name="name" id="cardName" placeholder="e.g. John Doe" maxlength="20" oninput="nameInput();">
+                <p class="error"></p>
+                <label for="accNo">CARD NUMBER</label>
+                <div></div>
+                <input type="number" name="accNo" id="cardNumber" placeholder="e.g. 0000 0000 0000 0000" maxlength="16" oninput="accInput();">
+                <p class="error"></p>
+                <div class="monthDateContainer">
+                    <div class="mmYY">
+                        <label for="mmYY">EXP. DATE (MM/YY)</label>
+                        <div></div>
+                        <div class="mmYYinput">
+                            <input type="number" name="mmYY" id="mm" placeholder="MM" maxlength="2">
+                            <input type="number" name="mmYY" id="yy" placeholder="YY" maxlength="2" oninput="dateInput();">
+                        </div>
+                    </div>
+                    <div class="cvcContainer">
+                        <label for="cvc">CVC</label>
+                        <input type="number" name="cvc" id="cvcNo" placeholder="e.g. 123" max="3" oninput="cvcInput();">
+                        <p class="error"></p>
+                    </div>
+                </div>
+                <div class="button center"onclick="submit();">Confirm</div>
+            </form>
+            <div id="completeState" class="completeState center display">
+                <div class="completeImage">
+                    <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+                </div>
+                <h2>THANK YOU!</h2>
+                <p>We've added your details</p>
+                <div class="button center"onclick="submit();">Continue</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

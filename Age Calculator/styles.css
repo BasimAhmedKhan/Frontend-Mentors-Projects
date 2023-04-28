@@ -88,6 +88,10 @@ input {
     width: 3rem;
 }
 
+.btn:hover{
+    background-color: black;
+}
+
 .date{
     margin-top: 1rem;
 }
