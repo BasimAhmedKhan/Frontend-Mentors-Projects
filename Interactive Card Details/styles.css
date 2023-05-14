@@ -4,6 +4,7 @@
     --LightGrayishViolet: hsl(270, 3%, 87%);
     --DarkGrayishViolet: hsl(279, 6%, 55%);
     --VeryDarkViolet: hsl(278, 68%, 11%);
+    --red: hsl(0, 100%, 66%);
 }
 
 * {
@@ -121,7 +122,7 @@ form, .completeState {
 form>*,
 .cvcContainer>*,
 .mmYY>* {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
 .cvcContainer {
@@ -163,12 +164,12 @@ input {
     opacity: 1;
 }
 
-input:hover{
+/* input:hover{
     color: var(--VeryDarkViolet);
     border: none;
     border: 0.1rem solid;
     border-image: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
-}
+} */
 
 .button{
     border: 0.1rem solid var(--VeryDarkViolet);
@@ -193,6 +194,24 @@ input:hover{
 
 .completeState>* {
     margin-bottom: 1rem;
+}
+
+.error{
+    color: hsl(0, 100%, 66%);
+}
+
+p{
+    visibility: hidden;
+    font-size: 0.8rem;
+}
+
+.visible{
+    visibility: visible !important;
+}
+
+.errorBorder, .errorBorder:focus{
+    color: var(--red) !important;
+    border: 0.1rem solid var(--red) !important; 
 }
 
 @media only screen and (max-width: 1100px){

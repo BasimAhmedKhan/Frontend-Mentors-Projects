@@ -30,5 +30,11 @@ calculate = () => {
         dayText.innerText = noOfDays - Math.floor((noOfMonths*30.417)-(noOfYears/4));
         monthText.innerText = noOfMonths - (noOfYears*12);
         yearText.innerText = noOfYears;
+        document.querySelectorAll(".errorMsg").forEach(e =>{
+            e.classList.remove("display");
+        });
+        document.querySelectorAll(".errorClass").forEach(e => {
+            e.classList.remove("error");
+        });
     }
 }

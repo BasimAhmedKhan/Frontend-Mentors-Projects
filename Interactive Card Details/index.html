@@ -32,11 +32,11 @@
                 <label for="name">CARDHOLDER NAME</label>
                 <div></div>
                 <input type="text" name="name" id="cardName" placeholder="e.g. John Doe" maxlength="20" oninput="nameInput();">
-                <p class="error"></p>
+                <p class="error">Wrong Format</p>
                 <label for="accNo">CARD NUMBER</label>
                 <div></div>
                 <input type="number" name="accNo" id="cardNumber" placeholder="e.g. 0000 0000 0000 0000" maxlength="16" oninput="accInput();">
-                <p class="error"></p>
+                <p class="error">Wrong Format</p>
                 <div class="monthDateContainer">
                     <div class="mmYY">
                         <label for="mmYY">EXP. DATE (MM/YY)</label>
@@ -45,11 +45,12 @@
                             <input type="number" name="mmYY" id="mm" placeholder="MM" maxlength="2">
                             <input type="number" name="mmYY" id="yy" placeholder="YY" maxlength="2" oninput="dateInput();">
                         </div>
+                        <p class="error">Wrong Format</p>
                     </div>
                     <div class="cvcContainer">
                         <label for="cvc">CVC</label>
                         <input type="number" name="cvc" id="cvcNo" placeholder="e.g. 123" max="3" oninput="cvcInput();">
-                        <p class="error"></p>
+                        <p class="error">Wrong Format</p>
                     </div>
                 </div>
                 <div class="button center"onclick="submit();">Confirm</div>
@@ -60,7 +61,7 @@
                 </div>
                 <h2>THANK YOU!</h2>
                 <p>We've added your details</p>
-                <div class="button center"onclick="submit();">Continue</div>
+                <div class="button center" onclick="confirmed();">Continue</div>
             </div>
         </div>
     </div>
